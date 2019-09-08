@@ -57,7 +57,11 @@
       <!-- End page content -->
       <!-- Sidebar/menu -->
       <div class="w3-rest w3-container w3-sidebar w3-bar-block w3-white w3-text-grey w3-collapse w3-center"
-        style="z-index:3;" id="mySidebar"><br><br><br>
+        style="z-index:3;" id="mySidebar">
+        <header class="w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
+          <span id="close_icon" style="display:none;"><a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_close()">X</a></span>
+        </header>
+        <br><br><br>
         <h4 class="w3-padding-54 w3-center" style="font-size:2vh;font-weight:bold;">תמונה באבן, מוצא<br>אלבומי תמונות
         </h4>
         <a href="#" onclick="w3_close()" class="w3-bar-item w3-button" style="font-size:2vh">מוצא, כללי</a>
@@ -72,15 +76,11 @@
           href="https://photos.app.goo.gl/qv26vBj98mZ5JjtE9">מקלף</a>
         <a class="w3-bar-item w3-button" style="font-size:2vh;">רוז'ני</a>
         <a class="w3-bar-item w3-button" style="font-size:2vh;">שטיינברג</a>
-        <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hide-large"
-          style="font-size:2vh;">
-          <hr>סגירת תפריט</a>
       </div>
 
       <!-- Top menu on small screens -->
       <header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
-        <span class="w3-left w3-padding">תמונה באבן, מוצא</span>
-        <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+        <span id="menu_icon"><a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a></span>
       </header>
 
     </div>
@@ -89,11 +89,15 @@
     // Script to open and close sidebar
     function w3_open() {
       document.getElementById("mySidebar").style.display = "block";
+      document.getElementById("menu_icon").style.display = "none";
+      document.getElementById("close_icon").style.display = "block";
       document.getElementById("myOverlay").style.display = "block";
     }
 
     function w3_close() {
       document.getElementById("mySidebar").style.display = "none";
+      document.getElementById("menu_icon").style.display = "inline-block";
+      document.getElementById("close_icon").style.display = "none";
       document.getElementById("myOverlay").style.display = "none";
     }
   </script>
