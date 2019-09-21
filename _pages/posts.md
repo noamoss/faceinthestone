@@ -1,6 +1,6 @@
 ---
 layout: post-list
-title: Posts
+title: תמונה בסלע
 description: "רשימת המשפחות"
 permalink: /posts.html
 ---
