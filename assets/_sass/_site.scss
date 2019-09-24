@@ -831,7 +831,7 @@ canvas {
 .pagination {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: left;
   width: 100%;
   margin-top: 1em;
   &_pager {
@@ -862,6 +862,7 @@ canvas {
       color: $white !important;
     }
     &.disabled {
+      display: none;
       background-color: darken($white, 3%);
       color:darken($white, 15%) !important;
       &:hover {

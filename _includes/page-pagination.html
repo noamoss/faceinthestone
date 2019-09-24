@@ -1,14 +1,20 @@
 {% if page.previous or page.next %}
 <nav class="pagination">
-  {% if page.previous %}
-  <a href="{{ page.previous.url }}" class="pagination_pager" title="{{ page.previous.title | markdownify | strip_html }}">הקודם</a>
+    {% if page.next %}
+  <a href="{{ page.next.url }}" class="pagination_pager" title="{{ page.next.title | markdownify | strip_html }}">
+    <i class="fa fa-arrow-right"></i>
+    הקודם
+  </a>
   {% else %}
   <a href="#" class="pagination_pager disabled">הקודם</a>
   {% endif %}
-  {% if page.next %}
-  <a href="{{ page.next.url }}" class="pagination_pager" title="{{ page.next.title | markdownify | strip_html }}">הבא</a>
-  {% else %}
-  <a href="#" class="pagination_pager disabled">הבא</a>
+
+  {% if page.previous %}
+  <a href="{{ page.previous.url }}" class="pagination_pager" title="{{ page.previous.title | markdownify | strip_html }}">
+    הבא
+    <i class="fa fa-arrow-left"></i>
+  </a>
+
   {% endif %}
 </nav>
 {% endif %}
