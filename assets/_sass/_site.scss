@@ -5,6 +5,7 @@
     z-index: 1;
     position: relative;
   }
+  display: table;
 }
 
 .block-right {
@@ -12,13 +13,13 @@
   float: right;
   overflow-y: auto;
   background-color: #fbf9cd;
+  display: block;
 }
 
 .block-left,
 .block-right {
   height: 100%;
   position: relative;
-  display: table;
   > div {
     display: table-cell;
     vertical-align: middle;
@@ -311,7 +312,7 @@ canvas {
       content: "";
       width: 100px;
       height: 2px;
-      background: #585b63;
+      background: #ffffff;
       bottom: -20px;
       position: absolute;
       left: 50%;
@@ -694,6 +695,9 @@ canvas {
   margin-bottom: 50px;
 }
 
+.share {
+  text-align: center;
+}
 .share-buttons {
   position: absolute;
   top: 32px;
@@ -831,7 +835,7 @@ canvas {
 .pagination {
   display: flex;
   flex-direction: row;
-  justify-content: left;
+  justify-content: center;
   width: 100%;
   margin-top: 1em;
   &_pager {

@@ -5,7 +5,7 @@ layout: compress
 <!DOCTYPE html>
 <html>
 {% include head.html %}
-<body id="homepage">
+<body id="homepage" dir="rtl">
 
   <div class="block-left">
     <div class="content">
@@ -17,26 +17,26 @@ layout: compress
         <h2>
           {{ site.description }}
         </h2>
-        {% include social-links.html %}
       </div>
     </div>
     <canvas></canvas>
   </div>
 
   <div class="block-right">
-    <a href="{{ site.url }}/posts" title="posts" class="posts-menu-icon"></a>
-    <span class="posts-link">POSTS</span>
-    <a title="project" class="projects-menu-icon">
-      <span></span>
-    </a>
-    <span class="projects-link">PROJECTS</span>
-    <div class="content">
-      <div class="about-info">
-        {{ content }}
+      <div class="content">
+        <ul class="posts-list">
+        {% for post in site.posts %}
+          <li>
+            <h2>
+              <a href="{{site.url}}{{ post.url }}" class="post-title">
+                <span>{{ post.title | markdownify | remove: "<p>" | remove: "</p>" }}</span>
+              </a>
+            </h2>
+          </li>
+          {% endfor %}
+        </ul>
       </div>
     </div>
-  </div>
-  {% include overlay.html %}
   {% include scripts.html %}
   <script src="{{ site.url }}/assets/js/canvas.js"></script>
 </body>
