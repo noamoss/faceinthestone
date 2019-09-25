@@ -286,9 +286,9 @@ canvas {
 }
 
 .logo {
-  max-width: 150px;
   display: inline-block;
-  height: auto;
+  width: auto;
+  max-width: 70%;
   background-size: 100%;
   margin: 0 auto;
   position: relative;
@@ -451,12 +451,10 @@ canvas {
     }
   }
   .logo {
-    top: 20px;
-    left: 20px;
-    position: absolute;
+    display: block;
+    max-width: 70%;
     img {
-      width: 50px;
-      height: auto;
+      width: auto;
     }
     &:after {
       display: none;
@@ -485,7 +483,6 @@ canvas {
   > li {
     margin-bottom: 23px;
     padding-bottom: 20px;
-    border-bottom: 1px solid darken($white, 8.2353);
     list-style: none;
     &:last-child {
       border: none;
@@ -509,7 +506,6 @@ canvas {
       display: inline-block;
       max-width: 75%;
       &:hover span {
-        border-bottom: 1px dotted $green;
       }
     }
   }
@@ -568,7 +564,6 @@ canvas {
   }
   a:not(.btn):not(.pagination_pager) {
     color: #399f62;
-    border-bottom: 1px dotted $green;
   }
   ul,
   ol {
@@ -658,7 +653,7 @@ canvas {
 
 .date-highlight {
   text-align: center;
-  margin: 50px 0;
+  margin: 5px 0;
   color: darken($white, 40);
   display: -webkit-box;
   display: -moz-box;
