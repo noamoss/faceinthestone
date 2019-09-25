@@ -705,6 +705,10 @@ canvas {
 // Media queries
 
 @media screen and (max-width: 640px) {
+  .block-right {
+    height: auto;
+    display: inline-flex;
+  }
   .posts-list {
     margin-top: 80px;
     > li {
