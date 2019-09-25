@@ -49,19 +49,19 @@
   {% capture image %}{{ page.image }}{% endcapture %}
   {% unless image contains 'http://' or image contains 'https://' %}{% capture image %}{{ site.url }}/{{ image }}{% endcapture %}{% endunless %}
   <style type="text/css">
-    #posts.inner-post-page .block-left {background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({{ image }}) no-repeat; background-size: cover;}
+    #posts.inner-post-page .block-left {background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url({{ image }}) no-repeat; background-size: cover;}
     @media screen and (max-width: 640px) {
       #posts.inner-post-page .block-left{
-        background-size: contain;
+        background: linear-gradient(rgba(0, 0, 0, 0), rgba(251, 249, 205, 0.2)), url({{ image }}) no-repeat; background-size: contain; background-color: #fbf9cd;}
       }
     }
   </style>
   {% else %}
   <style type="text/css">
-    #posts.inner-post-page .block-left {background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({{ site.url }}/{{ site.background.default-post }}) no-repeat;background-size: cover;}
+    #posts.inner-post-page .block-left {background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url({{ site.url }}/{{ site.background.default-post }}) no-repeat;background-size: cover;}
     @media screen and (max-width: 640px) {
       #posts.inner-post-page .block-left{
-        background-size: contain;
+        {background: linear-gradient(rgba(0, 0, 0, 0), rgba(251, 249, 205, 0.2)), url({{ site.url }}/{{ site.background.default-post }}) no-repeat;background-size: contain;  background-color: #fbf9cd;}      
       }
     }
   </style>
