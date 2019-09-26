@@ -855,10 +855,10 @@ canvas {
     -ms-user-select: none;
     user-select: none;
     &:first-child {
-      border-radius: 4px 0 0 4px;
+      border-radius: 0 4px 4px 0;
     }
     &:last-child {
-      border-radius: 0 4px 4px 0;
+      border-radius: 4px 0 0 4px;
     }
     &:hover {
       background-color: $green;
