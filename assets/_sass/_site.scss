@@ -446,16 +446,16 @@ canvas {
   .block-right {
     display: block;
     .content {
-      height: auto;
       display: block;
       max-width: 800px;
     }
   }
   .logo {
     display: block;
-    max-width: 70%;
     img {
       width: auto;
+          max-width: 70%;
+
     }
     &:after {
       display: none;
@@ -779,6 +779,8 @@ canvas {
   }
   .block-right {
     overflow-y: inherit;
+    height:auto;
+    display:inline-flex;
   }
   .projects-menu li {
     width: 50% !important;
