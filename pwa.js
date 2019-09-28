@@ -1,7 +1,7 @@
 // Register the service worker
 
 if ('serviceWorker' in navigator){
-    navigator.serviceWorker.register('assets/js/sw.js').then(function(registration){
+    navigator.serviceWorker.register('./sw.js').then(function(registration){
     // Registeration was successful
     console.log('ServiceWorker registration successful with scope: ',
     registration.scope);
