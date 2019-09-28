@@ -40,7 +40,7 @@
   <!-- Feed -->
   {% feed_meta %}
   <!-- Favicons -->
-  <link rel="shortcut icon" type="image/png" href="{{ site.url }}/favicon.png" />
+  <link rel="shortcut icon" type="image/png" href="{{ site.url }}/favicon.ico" />
   <link rel="shortcut icon" href="{{ site.url }}/favicon.ico" />
   <!-- CSS -->
   <link rel="stylesheet" type="text/css" href="{{ site.url }}/assets/css/main.css">
@@ -70,4 +70,6 @@
     .block-left {background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(44,45,51,0.9)), url({{ site.url }}/{{ site.background.homepage }}) no-repeat;background-size: cover;}
   </style>
   {% endif %}
+
+  <script src="{{ site.url}}/assets/js/pwa.js"></script>
 </head>
