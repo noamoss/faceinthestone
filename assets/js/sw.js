@@ -4,10 +4,10 @@ self.addEventListener('install', event => {
     event.waitUntil(
         caches.open(cachename)
             .then(cache => cache.addAll([
-                '../images/project_logo.png',
-                '../images/view.jpg',
-                '../favicon.ico',
-                '../assets/css/main.css',
+                'images/project_logo.png',
+                'images/view.jpg',
+                'favicon.ico',
+                'assets/css/main.css',
             ]))
     );
 });
