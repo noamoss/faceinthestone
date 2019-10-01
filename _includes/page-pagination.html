@@ -6,7 +6,7 @@
     הקודם
   </a>
   {% else %}
-  <a href="#" class="pagination_pager disabled">הקודם</a>
+  <a href="{{ site.url }}" class="pagination_pager" title="לתפריט">לתפריט</a>
   {% endif %}
 
   {% if page.previous %}
@@ -14,7 +14,10 @@
     הבא
     <i class="fa fa-arrow-left"></i>
   </a>
-
+  {% else %}
+  <a href="{{ site.url }}" class="pagination_pager" title="לתפריט">
+    לתפריט
+  </a>
   {% endif %}
 </nav>
 {% endif %}
