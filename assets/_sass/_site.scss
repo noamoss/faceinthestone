@@ -531,12 +531,12 @@ canvas {
 
 .inner-post {
   h1 {
-    font-size: 70px;
+    font-size: 3em;
     line-height: 70px;
     margin-bottom: 50px;
   }
   h2 {
-    font-size: 30px;
+    font-size: 2em;
     line-height: 30px;
     margin-top: 20px;
     margin-bottom: 30px;
@@ -599,7 +599,8 @@ canvas {
     color: $white;
     font-size: 15px;
   }
-  .section-line {
+}
+ .section-line {
     color: $green;
     position: relative;
     display: -webkit-box;
@@ -649,7 +650,7 @@ canvas {
       }
     }
   }
-}
+
 
 .date-highlight {
   text-align: center;
@@ -705,6 +706,10 @@ canvas {
 // Media queries
 
 @media screen and (max-width: 640px) {
+  h1 {
+    font-size: 2.5em;
+  }
+
   .block-right {
     height: auto;
     display: inline-flex;
