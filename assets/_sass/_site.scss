@@ -1,3 +1,9 @@
+
+.cover {
+  object-fit: cover;
+  height: 100%;
+}
+
 .block-left {
   float: left;
   width: 70%;
@@ -443,6 +449,7 @@ canvas {
 }
 
 #posts {
+  background-color: #fbf9cd;
   .block-right {
     display: block;
     .content {
@@ -710,6 +717,9 @@ canvas {
     font-size: 2.5em;
   }
 
+  .block-left {
+    height:auto;
+  }
   .block-right {
     height: auto;
     display: inline-flex;

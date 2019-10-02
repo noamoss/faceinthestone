@@ -8,13 +8,14 @@ layout: compress
 <body id="posts" class="inner-post-page" dir="rtl">
 
     <div class="block-left">
-      <div class="content">
-      </div>
+      {% if page.image %}
+        <img src="{{site.url}}/{{page.image}}" class="cover" alt="{{ page.title }}" />
+      {% endif %}
     </div>
 
     <div class="block-right">
       <div class="inner-post content">
-          <a href="{{ site.url }}" class="logo" ><img src="{{ site.url }}/images/{{ site.logo }}" alt="לוגו"></a>
+          <a href="{{ site.url }}" class="logo"><img src="{{ site.url }}/images/{{ site.logo }}" alt="לוגו"></a>
           <h1>{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>
           <div class="section-line reverse"><em>/</em>{{ page.caption}}<em>/</em></div>
           <div class="date-highlight">&nbsp;&#x2756;&nbsp;</div>
