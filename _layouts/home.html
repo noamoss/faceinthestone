@@ -16,7 +16,9 @@ layout: compress
   <div class="block-right">
       <div class="content">
         <img src="{{ site.url }}/images/{{ site.logo }}" alt="מוצא, מעמק להר">
-        <h1>{{ site.description }}</h1>
+        <h1 id="homepage-title">{{ site.description }}</h1>
+        <br>
+        <hr>
         <ul class="posts-list">
         {% for post in site.posts %}
           <li>
