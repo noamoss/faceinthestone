@@ -26,7 +26,7 @@ sass:
   style:            compressed
 
 # Google Analytics
-#google-analytics: UA-XXXXX-Y
+google_analytics: UA-126616292-1
 
 # Social Links
 #email:             email
@@ -56,9 +56,9 @@ sass:
 
 # Gems
 gems:
-  - jekyll-feed
   - jekyll-sitemap
   - jekyll-gist
+  - jekyll-seo-tag
 
 # Exclude list
 include: [_pages]
