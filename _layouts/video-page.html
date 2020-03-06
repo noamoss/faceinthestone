@@ -1,0 +1,26 @@
+
+<!DOCTYPE html lang="he-IL">
+<html>
+{% include head.html %}
+<body id="posts" class="inner-post-page" dir="rtl">
+
+    <div class="block-left">
+        {{ content }}
+    </div>
+
+    <div class="block-right">
+      <div class="inner-post content">
+          <a href="{{ site.url }}"><img src="{{ site.url }}/images/{{ site.logo }}" class="logo" alt="לוגו"></a>
+          <h2>{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h2>
+          <div class="section-line reverse"><em>/</em>{{ page.caption}}<em>/</em></div>
+          <div class="date-highlight">&nbsp;&#x2756;&nbsp;</div>
+        <br>
+        {% include share.html %}
+        <br><hr>
+        {% include page-pagination.html %}
+
+      </div>
+    </div>
+    {% include scripts.html %}
+</body>
+</html>
