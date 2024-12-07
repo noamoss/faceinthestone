@@ -3,3 +3,4 @@ gem 'jekyll'
 gem 'jekyll-sitemap'
 gem "jekyll-gist"
 gem 'jekyll-seo-tag'
+gem 'youtube'

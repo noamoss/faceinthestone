@@ -2,7 +2,7 @@
 title: מוצא, מעמק להר
 description: " בקיץ 2018 חברו צאצאיהם של ראשוני מוצא לשם הנצחת פועלם של אבותיהם.
 סיפורם של הראשונים מוצג כאלבום פתוח התלוי על קיר בית-הכנסת (בכינויו 'תמונה באבן מוצא')."
-url: https://motza.thepitz.io/
+url: https://motza.thepitz.studio/
 logo: project_logo.png                                       # Site logo
 locale: he_IL
 
@@ -66,3 +66,4 @@ exclude: [README.md, Gemfile, Gemfile.lock, _site, src, vendor, CNAME, LICENSE, 
 
 plugins:
   - youtube
+  - jekyll-seo-tag
