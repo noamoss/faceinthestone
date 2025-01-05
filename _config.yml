@@ -57,10 +57,8 @@ google-analytics: UA-126616292-4
 # Gems
 plugins:
   - jekyll-sitemap
-  - jekyll-gist
   - jekyll-seo-tag
-  - youtube
-# Exclude list
+  # Exclude list
 include: [_pages]
 exclude: [README.md, Gemfile, Gemfile.lock, _site, src, vendor, CNAME, LICENSE, Rakefile, .sass-cache, .DS_Store]
 
