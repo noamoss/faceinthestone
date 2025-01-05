@@ -55,7 +55,7 @@ google-analytics: UA-126616292-4
 #behance:           username
 
 # Gems
-gems:
+plugins:
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-seo-tag
