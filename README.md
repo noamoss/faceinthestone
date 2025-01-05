@@ -1,25 +1,68 @@
-# Halve  [![Donate](https://img.shields.io/badge/paypal-donate-blue.svg)](https://www.paypal.me/taylantatli/0usd)  
-  
-## `Sorry guys but there will be no update until I buy a new laptop.`
+# Motza Families Archive | ארכיון משפחות מוצא
 
-This theme is Jekyll port of [vangeltzo.com](http://vangeltzo.com/) (by [Vangelis Tzortzis](https://github.com/srekoble)).
+> A digital archive documenting the historical families of Motza settlement through photographs and stories.
 
-To learn how to install and use this theme check out the [installation guide](https://taylantatli.github.io/Halve/halve-theme/) for more information.
+## About the Project
 
-If you have a question, find a bug, or just want to say hi, please open an [issue on GitHub](https://github.com/TaylanTatli/Halve/issues/new).
+This digital archive presents historical photographs and stories of the founding families of Motza settlement, from its establishment in 1894 to the mid-20th century. The archive includes rare photographs and historical documentation of families such as Yalin, Broza, Cohen, Katz, and others who shaped the early history of Motza.
 
-## Preview   
-![screenshot of Halve](/images/halve-home-image.png)
+## Featured Collections
 
-See a [live version of Halve](http://taylantatli.github.io/Halve) hosted on GitHub.
+- Early Settlement Period (1860-1894)
+- Founding Families (1894)
+- Agricultural Development
+- Historical Events
+- Family Portraits
 
-# Credits
-- Original Work: [Vangelis Tzortzis](https://github.com/srekoble)  
-- Sample Posts and some code examples: [Michael Rose](https://github.com/mmistakes/)
-- Images: [Unsplash](https://unsplash.com/) and [Lorem Pixel](http://lorempixel.com)
+## Technical Details
 
-### Others
-- [Jekyll](http://jekyllrb.com/)
-- [jQuery](http://jquery.com/)
-- [Magnific Popup](http://dimsemenov.com/plugins/magnific-popup/)
-- [FitVids.JS](http://fitvidsjs.com/)
+This site is built with:
+- Jekyll static site generator
+- Responsive image galleries
+- Bilingual support (Hebrew/English)
+- Mobile-friendly design
+
+## Local Development
+
+1. Install dependencies:
+```
+bundle install
+```
+
+2. Run the development server:
+```
+bundle exec jekyll serve
+```
+
+3. Visit `http://localhost:4000` in your browser
+
+## Contributing
+
+If you have historical photographs or stories about Motza families that you'd like to contribute:
+
+1. Fork this repository
+2. Add your content following the existing post format in `_posts`
+3. Submit a pull request
+
+## Post Format
+
+New entries should follow this format:
+```
+---
+layout: post
+title: "Family Name"
+image: images/family-name.jpg
+caption: "Photographer (if known), Collection source"
+---
+Historical description and context...
+```
+
+## Credits
+
+- Website development: Noam Castel
+- This project is built upon:
+    - Original Theme: [Halve Jekyll Theme](https://github.com/TaylanTatli/Halve) by Taylan Tatlı. The theme has been modified and adapted to serve as a bilingual historical photo archive while maintaining the original's responsive and minimalist design principles.
+
+## License
+
+This project is licensed under the MIT License. Historical photographs may have additional usage restrictions.
