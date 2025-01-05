@@ -174,7 +174,7 @@
   top: 50%;
   width: auto;
   text-align: center;
-  margin-top: -0.8em;
+  margin-top: (-0.8em);
   left: 8px;
   right: 8px;
   z-index: $mfp-z-index-base + 4;
@@ -370,7 +370,7 @@ button {
     width: 100%;
     height: 0;
     overflow: hidden;
-    padding-top: $mfp-iframe-ratio * 100%;
+    padding-top: percentage($mfp-iframe-ratio);
     iframe {
       position: absolute;
       display: block;
@@ -431,7 +431,7 @@ button {
     }
   }
   .mfp-bottom-bar {
-    margin-top: -$mfp-image-padding-bottom + 4;
+    margin-top: (-$mfp-image-padding-bottom + 4);
     position: absolute;
     top: 100%;
     left: 0;
